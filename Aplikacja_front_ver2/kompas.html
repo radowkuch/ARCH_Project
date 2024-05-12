@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companio Politico</title>
+    <link rel="stylesheet" href="kompas.css">
+
+</head>
+    <body>
+        <section class="wrapper">
+            <!--NAWIGACJA-->
+            <section class="containerWithNavigation">
+                <h1 class="mainTitle">Companio politico</h1>
+                <div class="logUnderMainTitle"></div>
+                <h2 class="navigationTitle">Nawigacja</h2>
+                <nav>
+                    <ul class="navigation">
+                        <li class="dashboardMenu"><div><img src="images/dashboard.png" alt=""></div><a href="index.html">dashboard</a></li>
+                        <li class="kompasMenu"><div><img src="images/kompas.png" alt=""></div><a href="#">kompas</a></li>
+                        <li class="informatorMenu"><div><img src="images/information.png" alt=""></div><a href="#">informator</a></li>
+                        <li class="quizMenu"><div><img src="images/quiz.png" alt=""></div><a href="#">quiz</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="mainElements">
+                <h1>kompas</h1>
+                <!--Przycisk rozpoczynający wyświetlanie pytań dla kompasu-->
+                <button class="quizStartStop">start</button>
+
+                <div class="allcards">
+                    <!--Wyświetlane pytania-->
+                    <div class="answers" >
+                        <form action="" class="form" style="display: none">
+                            <div class="question">
+                                <input type="radio" name="question">
+                                <!--Pytanie 1 - label do pobrania w JS-->
+                                <label class="question1" for="question1">Przeciętny obywatel ma prawo posiadać broń palną bez większych restrykcji</label>
+                            </div>
+                            <div class="question">
+                                <input type="radio" name="question">
+                                <!--Pytanie 2 - label do pobrania w JS-->
+                                <label class="question2" for="question2">Broń palna powinna być dostępna dla obywateli, ale po przejściu odpowiednich badań i otrzymaniu zgody.</label>
+                            </div>
+                            <div class="question">
+                                <input type="radio" name="question">
+                                <!--Pytanie 3 - label do pobrania w JS-->
+                                <label class="question3" for="question3">Broń palna powinna być dozwolona tylko dla nielicznych grup oraz po spełnieniu wielu wymogów, w tym takzę po przejściu odpowiednich badań.</label>
+                            </div>
+                            <div class="question">
+                                <input type="radio" name="question">
+                                <!--Pytanie 4 - label do pobrania w JS-->
+                                <label class="question4" for="question4">Przeciętny obywatel nie powinien być w posiadaniu broni atomowej. Grozi to wieloma atakami, w tym zamachami terrorystycznymi.</label>
+                            </div>
+                            <!--Przycisk wysyłający-->
+                            <input class="buttonForm" type="submit" value="NEXT">
+                        </form>
+                        
+                    </div>
+                    <!-- Wyświetlane pytanie oraz wyniki-->
+                    <div class="askAndResult">
+                        <!--Wyświetlanie pytań-->
+                        <div class="question" >
+                            <h1 style="display: none">Pacyfizm - militaryzm</h1>
+                            <p style="display: none" class="content">Jaki jest twój pogląd na posiadanie broni palnej przez obywateli?</p>
+                        </div>
+                        <!--Wyniki wyświetlane 5 kategorii-->
+                        <div class="result">
+                            <div class="bar">
+                                <div class="valueLeft1"></div>
+                                <div class="valueRight1"></div>
+
+
+                                <div class="leftElement">
+                                    <i class="fa-solid fa-gun"></i>
+                                    
+                                </div>
+                                <!--Dwie wartości do zmiany procentowo-->
+                                <div class="middleValue">
+                                    <h3 class="leftVaule1">50</h3>
+                                    <span>|</span>
+                                    <h3 class="rightVaule1">50</h3>
+                                </div>
+                                <div class="rightElement">
+                                    <i class="fa-solid fa-hand-holding-heart"></i>
+                                    
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <div class="valueLeft2"></div>
+                                <div class="valueRight2"></div>
+                                <div class="leftElement">
+                                    <i class="fa-solid fa-gun"></i>
+                                    
+                                </div>
+                                <!--Dwie wartości do zmiany procentowo-->
+                                <div class="middleValue">
+                                    <h3 class="leftVaule2">60</h3>
+                                    <span>|</span>
+                                    <h3 class="rightVaule2">40</h3>
+                                </div>
+                                <div class="rightElement">
+                                    <i class="fa-solid fa-hand-holding-heart"></i>
+                                    
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <div class="valueLeft3"></div>
+                                <div class="valueRight3"></div>
+
+                                <div class="leftElement">
+                                    <i class="fa-solid fa-gun"></i>
+                                    
+                                </div>
+                                <!--Dwie wartości do zmiany procentowo-->
+                                <div class="middleValue">
+                                    <h3 class="leftVaule3">55</h3>
+                                    <span>|</span>
+                                    <h3 class="rightVaule3">45</h3>
+                                </div>
+                                <div class="rightElement">
+                                    <i class="fa-solid fa-hand-holding-heart"></i>
+                                    
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <div class="valueLeft4"></div>
+                                <div class="valueRight4"></div>
+
+                                <div class="leftElement">
+                                    <i class="fa-solid fa-gun"></i>
+                                    
+                                </div>
+                                <!--Dwie wartości do zmiany procentowo-->
+                                <div class="middleValue">
+                                    <h3 class="leftVaule4">40</h3>
+                                    <span>|</span>
+                                    <h3 class="rightVaule4">60</h3>
+                                </div>
+                                <div class="rightElement">
+                                    <i class="fa-solid fa-hand-holding-heart"></i>
+                                    
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <div class="valueLeft5"></div>
+                                <div class="valueRight5"></div>
+
+                                <div class="leftElement">
+                                    <i class="fa-solid fa-gun"></i>
+                                    
+                                </div>
+                                <!--Dwie wartości do zmiany procentowo-->
+                                <div class="middleValue">
+                                    <h3 class="leftVaule5">45</h3>
+                                    <span>|</span>
+                                    <h3 class="rightVaule5">55</h3>
+                                </div>
+                                <div class="rightElement">
+                                    <i class="fa-solid fa-hand-holding-heart"></i>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </section>
+        </section>
+        <script src="https://kit.fontawesome.com/cbda87ed98.js" crossorigin="anonymous"></script>
+        <script src="src/kompas.js"></script>
+    </body>
+</html>

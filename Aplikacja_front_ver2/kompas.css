@@ -1,0 +1,456 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    
+    background-color: #134E5E;
+
+}
+section.wrapper{
+    display: flex;
+}
+
+section>h1.mainTitle{
+    color: white;
+    text-transform: uppercase;
+    font-size: 3.4rem;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+section.mainElements{
+    position: relative;
+    background-color: #f4FBF4;
+    width: 80%;
+    border-radius: 20px;
+    height: 96vh;
+    margin: 2vh 2vh 2vh 0;
+    
+}
+
+section.mainElements>h1{
+    position: absolute;
+    top:25px;
+    left: 45px;
+    text-transform: uppercase;
+    color: #134E5E;
+    font-size: 2.8rem;
+}
+/* ---- Answers card ------------ */
+section.mainElements>div.answers{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top:100px;
+    left: 45px;
+    background-color: white;
+    width: 636px;
+    height: 255px;
+    border-radius: 20px;
+}
+
+section.mainElements>button.quizStartStop{
+    position: absolute;
+    right: 45px;
+    top: 25px;
+    display: block;
+    padding: 15px 45px;
+    border-radius: 30px;
+    border: 0;
+    background-color: #134E5E;
+    color: white;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+section.mainElements>button.quizStop{
+    position: absolute;
+    right: 45px;
+    top: 25px;
+    display: block;
+    padding: 15px 45px;
+    border-radius: 30px;
+    border: 0;
+    background-color: #74152a;
+    color: white;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+section.mainElements>div.allcards{
+    display: flex;
+    flex-direction: row;
+    
+}
+div.answers>form.form{
+    display: flex;
+    flex-direction: column;
+    height: 662px;
+    justify-content: space-evenly;
+}
+
+div.allcards>div.answers{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 662px;
+    width: 500px;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: 45px;
+}
+
+div.question{
+    display: flex;
+    align-items: center;
+}
+
+div.askAndResult{
+    display: flex;
+    flex-direction: column;
+}
+input.buttonForm{
+    border-radius: 30px;
+    align-self: center;
+    padding: 15px 45px;
+    border: 0;
+    background-color: #134E5E;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+div.question>label{
+    color: #134E5E;
+    font-size: 1.8rem;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+div.question>input{
+    
+    margin-left: 20px;
+}
+
+/*  ------ Ask Card --------------------- */
+
+div.askAndResult{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    justify-content: space-between;
+}
+
+div.askAndResult>div.question{
+    display: flex;
+    flex-direction: column;
+    height: 162px;
+    background-color: white;
+    border-radius: 20px;
+    width: 600px;
+    margin-top: 100px;
+    justify-content: space-evenly;
+}
+
+div.askAndResult>div.question>h1{
+    color: #134E5E;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 2.3rem;
+
+}
+
+div.askAndResult>div.question>p.content{
+    color: #134E5E;
+    
+    
+    font-size: 1.7rem;
+
+}
+/* -------------- RESULT CARD ---------------------*/
+div.askAndResult>div.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 480px;
+    background-color: white;
+    border-radius: 20px;
+}
+div.askAndResult>div.result>div.bar{
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    background-color: #134E5E;
+    border-radius: 10px;
+    width: 80%;
+    position: relative;
+    z-index: 1;
+}
+div.askAndResult>div.result>div.bar>div.leftElement{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.9rem;
+    color: white;
+    height: 45px;
+    background-color: rgb(150, 109, 136);
+    border-radius: 10px;
+    width: 45px;
+    
+    
+}
+
+
+
+div.askAndResult>div.result>div.bar>div.rightElement{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.9rem;
+    color: white;
+    height: 45px;
+    background-color: #36798b;
+    border-radius: 10px;
+    width: 45px;
+    
+    
+}
+
+
+
+div.askAndResult>div.result>div.bar>div.middleValue{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.6rem;
+    color: white;
+    height: 45px;
+    width: 70px;
+}
+
+/* punktacja pierwszej kategorii */
+div.askAndResult>div.result>div.bar>div.valueLeft1{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 45px;
+    width: 50%;
+    background-color: rgb(136, 66, 112);
+    z-index: -1;
+    border-radius: 20px 0 0 20px;
+}
+
+div.askAndResult>div.result>div.bar>div.valueRight1{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 45px;
+    width: 50%;
+    background-color: rgb(48, 101, 114);
+    z-index: -1;
+    border-radius: 0 20px 20px 0;
+}
+
+/* punktacja drugiej kategorii */
+div.askAndResult>div.result>div.bar>div.valueLeft2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 45px;
+    width: 60%;
+    background-color: rgb(136, 66, 112);
+    z-index: -1;
+    border-radius: 20px 0 0 20px;
+}
+
+div.askAndResult>div.result>div.bar>div.valueRight2{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 45px;
+    width: 40%;
+    background-color: rgb(48, 101, 114);
+    z-index: -1;
+    border-radius: 0 20px 20px 0;
+}
+
+/* punktacja trzeciej kategorii */
+
+div.askAndResult>div.result>div.bar>div.valueLeft3{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 45px;
+    width: 55%;
+    background-color: rgb(136, 66, 112);
+    z-index: -1;
+    border-radius: 20px 0 0 20px;
+}
+
+div.askAndResult>div.result>div.bar>div.valueRight3{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 45px;
+    width: 45%;
+    background-color: rgb(48, 101, 114);
+    z-index: -1;
+    border-radius: 0 20px 20px 0;
+}
+
+/* punktacja czwartej kategorii */
+
+div.askAndResult>div.result>div.bar>div.valueLeft4{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 45px;
+    width: 40%;
+    background-color: rgb(136, 66, 112);
+    z-index: -1;
+    border-radius: 20px 0 0 20px;
+}
+
+div.askAndResult>div.result>div.bar>div.valueRight4{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 45px;
+    width: 60%;
+    background-color: rgb(48, 101, 114);
+    z-index: -1;
+    border-radius: 0 20px 20px 0;
+}
+
+/* punktacja piatej kategorii */
+
+div.askAndResult>div.result>div.bar>div.valueLeft5{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 45px;
+    width: 45%;
+    background-color: rgb(136, 66, 112);
+    z-index: -1;
+    border-radius: 20px 0 0 20px;
+}
+
+div.askAndResult>div.result>div.bar>div.valueRight5{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 45px;
+    width: 55%;
+    background-color: rgb(48, 101, 114);
+    z-index: -1;
+    border-radius: 0 20px 20px 0;
+}
+
+
+
+
+
+
+/* -------- Authors card --------------------------  */
+
+section.mainElements>div.Authors{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top:400px;
+    left: 45px;
+    background-color: white;
+    width: 636px;
+    height: 255px;
+    border-radius: 20px;
+}
+
+section.mainElements>div.Authors>h1{
+    color: #134E5E;
+    text-transform: uppercase;
+    font-size: 2.1rem;
+    margin-top: 50px;
+}
+
+
+/* -------------- NAVIGATION STYLE -------------------- */
+
+section.containerWithNavigation{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vh;
+    justify-content: flex-start;
+}
+
+section.containerWithNavigation>nav>ul.navigation{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-around;
+}
+section.containerWithNavigation>nav>ul.navigation>li{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+section.containerWithNavigation>nav>ul.navigation>li>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    background-color: rgba(100, 100, 100, 0.7);
+}
+section.containerWithNavigation>nav>ul.navigation>li>div>img{
+    width: 21px;
+}
+
+section.containerWithNavigation>div.logUnderMainTitle{
+    display: block;
+    background-color: white;
+    height: 2px;
+    width: 75%;
+    border: 2px;
+    margin-top: 15px;
+}
+
+section.containerWithNavigation>h2.navigationTitle{
+    text-transform: uppercase;
+    color: white;
+    opacity: 40%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+section.containerWithNavigation>nav>ul.navigation>li>a{
+    display: flex;
+    text-transform: uppercase;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin-left: 20px;
+    letter-spacing: 1px;
+}
